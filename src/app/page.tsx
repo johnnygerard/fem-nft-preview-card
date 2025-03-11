@@ -3,7 +3,7 @@ import { memo } from "react";
 
 const HomePage = () => {
   return (
-    <main className="grid min-h-screen place-items-center px-6 py-12">
+    <main className="grid min-h-screen min-w-min place-items-center px-6 py-12">
       <NftPreviewCard />
     </main>
   );
