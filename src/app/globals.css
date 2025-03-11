@@ -29,6 +29,7 @@
   --breakpoint-tb: 48em; /* Tablet: 768px */
   --breakpoint-dt: 90em; /* Desktop: 1440px */
 
+  --color-cyan: #00fff8;
   --font-sans: var(--font-outfit);
 
   --spacing: 0.25rem;
