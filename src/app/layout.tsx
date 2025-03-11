@@ -12,11 +12,11 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
-const APP_NAME = "placeholder";
-const DESCRIPTION = "placeholder";
+const APP_NAME = "NFT preview card";
+const DESCRIPTION = `Frontend Mentor challenge: ${APP_NAME}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
+  metadataBase: new URL("https://fem-nft-preview-card-jgerard.vercel.app"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
@@ -46,7 +46,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html className={cn(outfit.variable, "font-sans antialiased")} lang="en-US">
-      <body>
+      <body className="bg-[#0D192C] text-white">
         <AppRouterProvider>{children}</AppRouterProvider>
         <Noscript />
       </body>
