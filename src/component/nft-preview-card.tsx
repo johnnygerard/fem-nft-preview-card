@@ -9,7 +9,7 @@ export const NftPreviewCard = memo(() => {
   return (
     <div
       className={cn(
-        "max-w-[21.875rem] rounded-[0.9375rem] bg-[#15263F] p-6",
+        "max-w-[21.875rem] rounded-[0.9375rem] bg-[#15263F] p-6 dt:pb-8",
         "shadow-[0_25px_50px_rgba(0,0,0,0.1)]",
       )}
     >
@@ -36,13 +36,13 @@ export const NftPreviewCard = memo(() => {
           Equilibrium #3429
         </span>
       </h1>
-      <p className="mt-3 text-[1.125rem]/[1.625rem] font-light text-[#8BACD9]">
+      <p className="mt-3 text-[1.125rem]/[1.625rem] font-light text-[#8BACD9] dt:mt-4">
         Our Equilibrium collection promotes balance and calm.
       </p>
       <div
         className={cn(
           "text-[0.9375rem]/[normal] dt:text-[1rem]",
-          "mt-4 flex items-center justify-between",
+          "mt-4 flex items-center justify-between dt:mt-6",
         )}
       >
         <span className="flex items-center gap-1.5 text-cyan">
@@ -54,7 +54,7 @@ export const NftPreviewCard = memo(() => {
           <span>3 days left</span>
         </span>
       </div>
-      <hr className="my-4 border-[#2E405A]" />
+      <hr className="my-4 border-[#2E405A] dt:mt-6" />
       <footer className="flex items-center gap-4">
         <Image
           className="size-8 rounded-full border border-white"
