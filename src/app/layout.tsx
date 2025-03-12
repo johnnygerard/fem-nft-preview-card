@@ -2,21 +2,21 @@ import { AppRouterProvider } from "@/component/app-router-provider";
 import { Noscript } from "@/component/noscript";
 import { cn } from "@/util/cn";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { memo, ReactNode } from "react";
 
-const geistSans = Geist({
+const outfit = Outfit({
   display: "swap",
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-outfit",
 });
 
-const APP_NAME = "placeholder";
-const DESCRIPTION = "placeholder";
+const APP_NAME = "NFT preview card";
+const DESCRIPTION = `Frontend Mentor challenge: ${APP_NAME}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com/placeholder"),
+  metadataBase: new URL("https://fem-nft-preview-card-jgerard.vercel.app"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
@@ -45,11 +45,8 @@ type Props = {
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <html
-      className={cn(geistSans.variable, "font-sans antialiased")}
-      lang="en-US"
-    >
-      <body>
+    <html className={cn(outfit.variable, "font-sans antialiased")} lang="en-US">
+      <body className="bg-[#0D192C] text-white">
         <AppRouterProvider>{children}</AppRouterProvider>
         <Noscript />
       </body>

@@ -1,10 +1,11 @@
+import { NftPreviewCard } from "@/component/nft-preview-card";
 import { memo } from "react";
 
 const HomePage = () => {
   return (
-    <div className="grid min-h-screen place-items-center">
-      <h1>Deployment successful!</h1>
-    </div>
+    <main className="grid min-h-screen min-w-min place-items-center px-6 py-12">
+      <NftPreviewCard />
+    </main>
   );
 };
 
